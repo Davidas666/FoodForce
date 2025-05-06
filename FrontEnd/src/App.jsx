@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <p >Food Force</p>
+      <p className='size '>Food Force</p>
     </>
   )
 }
