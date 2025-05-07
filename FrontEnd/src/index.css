@@ -1,1 +1,95 @@
 @import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url('../img/FF_Header_background.PNG'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+  }
+
+.logo {
+  color: rgba(255, 167, 35, 0.906);
+  font-size: 3.5rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: bold;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu-button:focus {
+  outline: none;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header-buttons a,
+.header-buttons button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.header-buttons a:hover,
+.header-buttons button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .header-buttons a,
+  .header-buttons button {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+}
+
+main {
+  margin-top: 280px;
+  padding: 20px;
+}
+
