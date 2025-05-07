@@ -4,34 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Force</title>
-    <link rel="stylesheet" href="src/index.css" />
   </head>
   <body>
-    <header>
-      <button class="menu-button" onclick="toggleSideMenu()">☰</button>
-      <span class="logo">Food Force</span>
-      <div class="header-buttons">
-        <a href="#" onclick="openRestaurantPopup()">Vilnius</a>
-        <a href="/register.html">Sign Up</a>
-        <a href="/login.html">Login</a>
-      </div>
-    </header>
-    <nav>
-      <!-- cia rasome navigacijos dali -->
-    </nav>
-    <main>
-      <!-- cia bus pagrindinis turinys ir korteles -->
-      <p>Welcome to Food Force! This is the main content area.</p>
-    </main>
-    <!-- scripto dalis tik kaip pvz, veliau ja panaikinsim -->
-    <script>
-      function toggleSideMenu() {
-        alert("Side menu opened!");
-      }
-
-      function openRestaurantPopup() {
-        alert("Restaurant selection popup opened!");
-      }
-    </script>
+    <div id="root"></div> 
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
