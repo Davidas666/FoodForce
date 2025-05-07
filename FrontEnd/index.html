@@ -1,26 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Force</title>
-    <body>
-      <header>
-        <h1>Food Force</h1>
-      </header>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-       
-      </nav>
-      <main>
-        <p>Welcome to Food Force! This is the main content area.</p>
-        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG9lc2phYmM4NjBzbnUzNHpuaHE3eWs3eTRlcHU5bGJhNXYxaTVvbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o85xunRezGKPOkcG4/giphy.gif" alt="">
-      </main>
-      <footer>
-        <p>Address:123 Food Street</p>
-      </footer>
-    </body>
-  </html>
+    <link rel="stylesheet" href="src/index.css" />
+  </head>
+  <body>
+    <header>
+      <button class="menu-button" onclick="toggleSideMenu()">☰</button>
+      <span class="logo">Food Force</span>
+      <div class="header-buttons">
+        <a href="#" onclick="openRestaurantPopup()">Vilnius</a>
+        <a href="/register.html">Sign Up</a>
+        <a href="/login.html">Login</a>
+      </div>
+    </header>
+    <nav>
+      <!-- cia rasome navigacijos dali -->
+    </nav>
+    <main>
+      <!-- cia bus pagrindinis turinys ir korteles -->
+      <p>Welcome to Food Force! This is the main content area.</p>
+    </main>
+    <!-- scripto dalis tik kaip pvz, veliau ja panaikinsim -->
+    <script>
+      function toggleSideMenu() {
+        alert("Side menu opened!");
+      }
+
+      function openRestaurantPopup() {
+        alert("Restaurant selection popup opened!");
+      }
+    </script>
+  </body>
+</html>
