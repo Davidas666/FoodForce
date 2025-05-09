@@ -63,6 +63,97 @@ header {
   background-color: #0056b3;
 }
 
+footer{
+  background-color: #99542D;
+  height: 120px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+footer>div{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_icon{
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10%;
+  
+}
+
+.icons{
+  height: 40px;
+  width:  40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.fb-icon{
+  background-image: url('../img/fb_footer_white.png'); 
+  margin: auto;
+}
+
+.insta-icon{
+  background-image: url('../img/insta_footer_white.png');
+  margin: auto;
+}
+
+.x-icon{
+  background-image: url('../img/x_footer_white.png'); 
+  margin: auto;
+}
+
+.fb-icon:hover{
+background-image: url('../img/fb_footer.png'); 
+}
+
+.insta-icon:hover{
+background-image: url('../img/instagram_footer.png');
+}
+
+.x-icon:hover{
+  background-image: url('../img/x_footer.png'); 
+}
+
+.footer_brands{
+  width: 70%;
+  padding-top: 10px;
+  display: flex;
+  justify-content:flex-end;
+  align-items:center;
+  flex-direction: column;
+}
+
+.companyLogo{
+  background-image: url('../img/FoodForce_Placeholder_Logo_white.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.companyLogo:hover{
+ background-image: url('../img/FoodForce_Placeholder_Logo_black.png')
+}
+
+.footer_info{
+  width: 20%;
+  padding-top: 10px;
+  text-align: justify ;
+  align-items: center;
+}
+
+
 @media (max-width: 800px) {
   header {
     flex-direction: column;
@@ -74,7 +165,25 @@ header {
     flex-direction: column;
     gap: 5px;
   }
+
+  footer{
+  height: auto;
+  padding: 0;
+  font-size: 0.9rem;
 }
+.footer_icon{
+  width: 30%;
+}
+
+.footer_brands{
+ width: 30%;
+}
+
+.footer_info{
+  width: 30%;
+}
+}
+
 
 @media (max-width: 375px) {
   .logo {
@@ -86,6 +195,37 @@ header {
     font-size: 0.8rem;
     padding: 5px;
   }
+
+  footer{
+  height: 200px;
+  padding: 0;
+  font-size: 0.7rem;
+}
+footer>div{
+  align-items: center;
+  flex-direction: column;
+}
+.footer_icon{
+  width: 100%;
+  justify-content: space-evenly;
+ 
+}
+
+.footer_brands{
+ width: 100%;
+ justify-content: flex-end;
+ order: 3;
+}
+.companyLogo{
+  width: 40px ;
+  height: 40px;
+}
+
+.footer_info{
+  width: 100%;
+  text-align: center;
+}
+
 }
 
 main {
